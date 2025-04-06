@@ -53,6 +53,298 @@
 /**
     Section: Device Pin Macros
 */
+/**
+  @Summary
+    Sets the GPIO pin, RF0, high using LATF0.
+
+  @Description
+    Sets the GPIO pin, RF0, high using LATF0.
+
+  @Preconditions
+    The RF0 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RF0 high (1)
+    IO_OUT_SENSE_SetHigh();
+    </code>
+
+*/
+#define IO_OUT_SENSE_SetHigh()          (_LATF0 = 1)
+/**
+  @Summary
+    Sets the GPIO pin, RF0, low using LATF0.
+
+  @Description
+    Sets the GPIO pin, RF0, low using LATF0.
+
+  @Preconditions
+    The RF0 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RF0 low (0)
+    IO_OUT_SENSE_SetLow();
+    </code>
+
+*/
+#define IO_OUT_SENSE_SetLow()           (_LATF0 = 0)
+/**
+  @Summary
+    Toggles the GPIO pin, RF0, using LATF0.
+
+  @Description
+    Toggles the GPIO pin, RF0, using LATF0.
+
+  @Preconditions
+    The RF0 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Toggle RF0
+    IO_OUT_SENSE_Toggle();
+    </code>
+
+*/
+#define IO_OUT_SENSE_Toggle()           (_LATF0 ^= 1)
+/**
+  @Summary
+    Reads the value of the GPIO pin, RF0.
+
+  @Description
+    Reads the value of the GPIO pin, RF0.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    uint16_t portValue;
+
+    // Read RF0
+    postValue = IO_OUT_SENSE_GetValue();
+    </code>
+
+*/
+#define IO_OUT_SENSE_GetValue()         _RF0
+/**
+  @Summary
+    Configures the GPIO pin, RF0, as an input.
+
+  @Description
+    Configures the GPIO pin, RF0, as an input.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RF0 as an input
+    IO_OUT_SENSE_SetDigitalInput();
+    </code>
+
+*/
+#define IO_OUT_SENSE_SetDigitalInput()  (_TRISF0 = 1)
+/**
+  @Summary
+    Configures the GPIO pin, RF0, as an output.
+
+  @Description
+    Configures the GPIO pin, RF0, as an output.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RF0 as an output
+    IO_OUT_SENSE_SetDigitalOutput();
+    </code>
+
+*/
+#define IO_OUT_SENSE_SetDigitalOutput() (_TRISF0 = 0)
+/**
+  @Summary
+    Sets the GPIO pin, RF1, high using LATF1.
+
+  @Description
+    Sets the GPIO pin, RF1, high using LATF1.
+
+  @Preconditions
+    The RF1 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RF1 high (1)
+    IO_IN_SENSE_SetHigh();
+    </code>
+
+*/
+#define IO_IN_SENSE_SetHigh()          (_LATF1 = 1)
+/**
+  @Summary
+    Sets the GPIO pin, RF1, low using LATF1.
+
+  @Description
+    Sets the GPIO pin, RF1, low using LATF1.
+
+  @Preconditions
+    The RF1 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RF1 low (0)
+    IO_IN_SENSE_SetLow();
+    </code>
+
+*/
+#define IO_IN_SENSE_SetLow()           (_LATF1 = 0)
+/**
+  @Summary
+    Toggles the GPIO pin, RF1, using LATF1.
+
+  @Description
+    Toggles the GPIO pin, RF1, using LATF1.
+
+  @Preconditions
+    The RF1 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Toggle RF1
+    IO_IN_SENSE_Toggle();
+    </code>
+
+*/
+#define IO_IN_SENSE_Toggle()           (_LATF1 ^= 1)
+/**
+  @Summary
+    Reads the value of the GPIO pin, RF1.
+
+  @Description
+    Reads the value of the GPIO pin, RF1.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    uint16_t portValue;
+
+    // Read RF1
+    postValue = IO_IN_SENSE_GetValue();
+    </code>
+
+*/
+#define IO_IN_SENSE_GetValue()         _RF1
+/**
+  @Summary
+    Configures the GPIO pin, RF1, as an input.
+
+  @Description
+    Configures the GPIO pin, RF1, as an input.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RF1 as an input
+    IO_IN_SENSE_SetDigitalInput();
+    </code>
+
+*/
+#define IO_IN_SENSE_SetDigitalInput()  (_TRISF1 = 1)
+/**
+  @Summary
+    Configures the GPIO pin, RF1, as an output.
+
+  @Description
+    Configures the GPIO pin, RF1, as an output.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RF1 as an output
+    IO_IN_SENSE_SetDigitalOutput();
+    </code>
+
+*/
+#define IO_IN_SENSE_SetDigitalOutput() (_TRISF1 = 0)
 
 /**
     Section: Function Prototypes

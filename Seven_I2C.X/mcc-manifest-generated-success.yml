@@ -2,7 +2,7 @@
 
 manifest_file_version: 1.0.0
 project: Seven_I2C
-creation_date: 2025-04-04T00:40:38.604-04:00[America/New_York]
+creation_date: 2025-04-06T01:40:48.100-04:00[America/New_York]
 operating_system: Windows 10
 mcc_mode: IDE
 mcc_mode_version: v6.20
@@ -18,6 +18,6 @@ device_library: {library_class: com.microchip.mcc.mcu16.Mcu16PeripheralLibrary, 
     / dsPIC33 / PIC32MM MCUs, version: 1.171.5}
 packs: {name: PIC24F-GA-GB_DFP, version: 1.10.375}
 modules:
+- {name: com.microchip.mcc.mcu16.Mcu16PeripheralLibrary, type: CLASSIC, version: 1.171.5}
 - {name: com.microchip.mcc.foundationservices.library.FoundationServicesLibrary, type: CLASSIC,
   version: 0.2.3}
-- {name: com.microchip.mcc.mcu16.Mcu16PeripheralLibrary, type: CLASSIC, version: 1.171.5}
