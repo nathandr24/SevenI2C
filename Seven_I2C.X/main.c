@@ -81,8 +81,8 @@ int main(void)
 //        {
 //            uint8_t motionFlag = 1;
 //        }
-        readOuterDistance();
-//        readInnerDistance();
+//        readOuterDistance();
+        readInnerDistance();
         
     }
 
