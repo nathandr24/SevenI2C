@@ -4,8 +4,8 @@
 #include "mcc_generated_files/delay.h"
 
 uint16_t trueDistance;
-uint8_t  outerSensorFlag = 0;
-uint8_t  innerSensorFlag = 0;
+volatile uint8_t  outerSensorFlag = 0;
+volatile uint8_t  innerSensorFlag = 0;
 
 uint8_t armFlag = 0;
 

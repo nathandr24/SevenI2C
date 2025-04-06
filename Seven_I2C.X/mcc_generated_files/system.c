@@ -65,12 +65,12 @@
 #include "pin_manager.h"
 #include "clock.h"
 #include "system.h"
-#include "drivers/i2c_master.h"
 #include "delay.h"
+#include "i2c1_driver.h"
 #include "drivers/i2c_simple_master.h"
 #include "interrupt_manager.h"
 #include "traps.h"
-#include "i2c1_driver.h"
+#include "drivers/i2c_master.h"
 
 void SYSTEM_Initialize(void)
 {

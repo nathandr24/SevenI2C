@@ -4,11 +4,11 @@ Tool Name:
   c:\program files\microchip\xc16\v2.10\bin\bin\..\bin/elf-ld.exe
 
 Command:
-  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.00 \
-  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.01 \
-  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.02 \
-  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.03 \
-  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.04 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp00002a70.00 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp00002a70.01 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp00002a70.02 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp00002a70.03 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp00002a70.04 \
   -p24FJ128GA010 \
   --mdfp=C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC24F-GA-GB_DFP/1.9.336/xc16 \
   -o \
@@ -487,7 +487,7 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x3c7f
+.debug_info       0x000000       0x3c84
  *(.debug_info)
  .debug_info      0x000000        0x295 build/default/debug/mcc_generated_files/drivers/i2c_types.o
  .debug_info      0x000295        0x61d build/default/debug/mcc_generated_files/drivers/i2c_simple_master.o
@@ -500,7 +500,7 @@ __CONFIG1
  .debug_info      0x002300        0x40e build/default/debug/mcc_generated_files/interrupt_manager.o
  .debug_info      0x00270e        0xf95 build/default/debug/mcc_generated_files/i2c1_driver.o
  .debug_info      0x0036a3        0x1d4 build/default/debug/mcc_generated_files/delay.o
- .debug_info      0x003877        0x408 build/default/debug/main.o
+ .debug_info      0x003877        0x40d build/default/debug/main.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0xa0e
