@@ -9,6 +9,8 @@ uint8_t  innerSensorFlag = 0;
 
 uint8_t armFlag = 0;
 
+uint8_t motionFlag = 0;
+
 void readOuterDistance(void);
 void outerTrip(void);
 void readInnerDistance(void);
@@ -80,7 +82,7 @@ int main(void)
 //            uint8_t motionFlag = 1;
 //        }
         readOuterDistance();
-        readInnerDistance();
+//        readInnerDistance();
         
     }
 
@@ -91,7 +93,7 @@ void readOuterDistance(void)
 {
     IO_OUT_SENSE_SetHigh();
     
-    DELAY_milliseconds(2);
+    DELAY_milliseconds(10);
     
     i2c_address_t distanceSensor = 0x40;
     uint8_t rawDistance[2] = {0,0};
@@ -130,7 +132,7 @@ void readInnerDistance(void)
 {
     IO_IN_SENSE_SetHigh();
     
-    DELAY_milliseconds(2);
+    DELAY_milliseconds(10);
     
     i2c_address_t distanceSensor = 0x40;
     uint8_t rawDistance[2] = {0,0};
@@ -155,5 +157,11 @@ void innerTrip(void)
     else if(outerSensorFlag == 1)
     {
         outerSensorFlag = 0;
+        return;
+    }
+    else 
+    {
+        innerSensorFlag = 1;
+        return;
     }
 }
