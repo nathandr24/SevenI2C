@@ -51,11 +51,11 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+#include "drivers/i2c_master.h"
+#include "delay.h"
 #include "drivers/i2c_simple_master.h"
 #include "interrupt_manager.h"
 #include "traps.h"
-#include "delay.h"
-#include "drivers/i2c_master.h"
 #include "i2c1_driver.h"
 
 #warning "This file will be removed in future MCC releases. Use system.h instead."

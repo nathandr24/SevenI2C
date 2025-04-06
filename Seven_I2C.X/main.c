@@ -81,7 +81,7 @@ int main(void)
 //        {
 //            uint8_t motionFlag = 1;
 //        }
-//        readOuterDistance();
+        readOuterDistance();
         readInnerDistance();
         
     }
@@ -117,6 +117,7 @@ void outerTrip(void)
     }
     else if(innerSensorFlag == 1)
     {
+        DELAY_milliseconds(500);
         armFlag = 1;
         innerSensorFlag = 0;
         return;
@@ -156,6 +157,7 @@ void innerTrip(void)
     }
     else if(outerSensorFlag == 1)
     {
+        DELAY_milliseconds(500);
         outerSensorFlag = 0;
         return;
     }

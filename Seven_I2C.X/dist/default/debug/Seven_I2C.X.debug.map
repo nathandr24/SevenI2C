@@ -4,11 +4,11 @@ Tool Name:
   c:\program files\microchip\xc16\v2.10\bin\bin\..\bin/elf-ld.exe
 
 Command:
-  -TC:\\Users\\natha\\AppData\\Local\\Temp\\tmp00005a14.00 \
-  -TC:\\Users\\natha\\AppData\\Local\\Temp\\tmp00005a14.01 \
-  -TC:\\Users\\natha\\AppData\\Local\\Temp\\tmp00005a14.02 \
-  -TC:\\Users\\natha\\AppData\\Local\\Temp\\tmp00005a14.03 \
-  -TC:\\Users\\natha\\AppData\\Local\\Temp\\tmp00005a14.04 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.00 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.01 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.02 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.03 \
+  -TC:\\Users\\ndr24\\AppData\\Local\\Temp\\tmp000039ac.04 \
   -p24FJ128GA010 \
   --mdfp=C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC24F-GA-GB_DFP/1.9.336/xc16 \
   -o \
@@ -87,13 +87,13 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x1f4           0x2ee  (750)
-.text                        0x3f4               0x916           0xda1  (3489)
-.dinit                       0xd0a                0x44            0x66  (102)
-.text                        0xd4e                0x56            0x81  (129)
-.init.delay32                0xda4                0x1c            0x2a  (42)
-.text                        0xdc0                0x50            0x78  (120)
+.text                        0x3f4               0x920           0xdb0  (3504)
+.dinit                       0xd14                0x44            0x66  (102)
+.text                        0xd58                0x56            0x81  (129)
+.init.delay32                0xdae                0x1c            0x2a  (42)
+.text                        0xdca                0x50            0x78  (120)
 
-                 Total "program" memory used (bytes):         0x1218  (4632) 3%
+                 Total "program" memory used (bytes):         0x1227  (4647) 3%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -245,35 +245,35 @@ External Symbols in Program Memory (by address):
                   0x000b38                  _i2c_readDataBlock
                   0x000b74                  _i2c_readNBytes
                   0x000b9a                  _main
-                  0x000ba2                  _readOuterDistance
-                  0x000be6                  _outerTrip
-                  0x000c0a                  _readInnerDistance
-                  0x000c4e                  _innerTrip
-                  0x000c6e                  _DELAY_milliseconds
-                  0x000c90                  _DELAY_microseconds
-                  0x000cc4                  _PIN_MANAGER_Initialize
-                  0x000d4e                  _CLOCK_Initialize
-                  0x000d7c                  _i2c_returnStop
-                  0x000d86                  _i2c_returnReset
-                  0x000d90                  _i2c_restartWrite
-                  0x000d9a                  _i2c_restartRead
-                  0x000da4                  ___delay32
-                  0x000dda                  _INTERRUPT_Initialize
-                  0x000df4                  _where_was_i
-                  0x000e04                  _SYSTEM_Initialize
+                  0x000ba4                  _readOuterDistance
+                  0x000be8                  _outerTrip
+                  0x000c10                  _readInnerDistance
+                  0x000c54                  _innerTrip
+                  0x000c78                  _DELAY_milliseconds
+                  0x000c9a                  _DELAY_microseconds
+                  0x000cce                  _PIN_MANAGER_Initialize
+                  0x000d58                  _CLOCK_Initialize
+                  0x000d86                  _i2c_returnStop
+                  0x000d90                  _i2c_returnReset
+                  0x000d9a                  _i2c_restartWrite
+                  0x000da4                  _i2c_restartRead
+                  0x000dae                  ___delay32
+                  0x000de4                  _INTERRUPT_Initialize
+                  0x000dfe                  _where_was_i
+                  0x000e0e                  _SYSTEM_Initialize
 
 External Symbols in Program Memory (by name):
 
-                  0x000d4e                  _CLOCK_Initialize
-                  0x000c90                  _DELAY_microseconds
-                  0x000c6e                  _DELAY_milliseconds
-                  0x000dda                  _INTERRUPT_Initialize
-                  0x000cc4                  _PIN_MANAGER_Initialize
-                  0x000e04                  _SYSTEM_Initialize
+                  0x000d58                  _CLOCK_Initialize
+                  0x000c9a                  _DELAY_microseconds
+                  0x000c78                  _DELAY_milliseconds
+                  0x000de4                  _INTERRUPT_Initialize
+                  0x000cce                  _PIN_MANAGER_Initialize
+                  0x000e0e                  _SYSTEM_Initialize
                   0x0003ee                  __DefaultInterrupt
                   0x0003b2                  __MI2C1Interrupt
                   0x0003d0                  __SI2C1Interrupt
-                  0x000da4                  ___delay32
+                  0x000dae                  ___delay32
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
                   0x00023c                  __psv_init
@@ -324,10 +324,10 @@ External Symbols in Program Memory (by name):
                   0x000a9c                  _i2c_read2ByteRegister
                   0x000b38                  _i2c_readDataBlock
                   0x000b74                  _i2c_readNBytes
-                  0x000d9a                  _i2c_restartRead
-                  0x000d90                  _i2c_restartWrite
-                  0x000d86                  _i2c_returnReset
-                  0x000d7c                  _i2c_returnStop
+                  0x000da4                  _i2c_restartRead
+                  0x000d9a                  _i2c_restartWrite
+                  0x000d90                  _i2c_returnReset
+                  0x000d86                  _i2c_returnStop
                   0x0004c8                  _i2c_setAddress
                   0x000418                  _i2c_setAddressNACKCallback
                   0x00050c                  _i2c_setBuffer
@@ -339,12 +339,12 @@ External Symbols in Program Memory (by name):
                   0x0009be                  _i2c_write1ByteRegister
                   0x000aea                  _i2c_write2ByteRegister
                   0x0009f2                  _i2c_writeNBytes
-                  0x000c4e                  _innerTrip
+                  0x000c54                  _innerTrip
                   0x000b9a                  _main
-                  0x000be6                  _outerTrip
-                  0x000c0a                  _readInnerDistance
-                  0x000ba2                  _readOuterDistance
-                  0x000df4                  _where_was_i
+                  0x000be8                  _outerTrip
+                  0x000c10                  _readInnerDistance
+                  0x000ba4                  _readOuterDistance
+                  0x000dfe                  _where_was_i
                   0x000622                  build/default/debug/mcc_generated_files/drivers/i2c_master.o:_do_I2C_DO_ACK
                   0x000640                  build/default/debug/mcc_generated_files/drivers/i2c_master.o:_do_I2C_DO_ADDRESS_NACK
                   0x000636                  build/default/debug/mcc_generated_files/drivers/i2c_master.o:_do_I2C_DO_NACK_RESTART
@@ -487,20 +487,20 @@ __CONFIG1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x3cbb
+.debug_info       0x000000       0x3c7f
  *(.debug_info)
- .debug_info      0x000000        0x29a build/default/debug/mcc_generated_files/drivers/i2c_types.o
- .debug_info      0x00029a        0x622 build/default/debug/mcc_generated_files/drivers/i2c_simple_master.o
- .debug_info      0x0008bc        0xc73 build/default/debug/mcc_generated_files/drivers/i2c_master.o
- .debug_info      0x00152f        0x31f build/default/debug/mcc_generated_files/system.o
- .debug_info      0x00184e         0xa2 build/default/debug/mcc_generated_files/where_was_i.o
- .debug_info      0x0018f0        0x21d build/default/debug/mcc_generated_files/clock.o
- .debug_info      0x001b0d        0x3a9 build/default/debug/mcc_generated_files/traps.o
- .debug_info      0x001eb6        0x472 build/default/debug/mcc_generated_files/pin_manager.o
- .debug_info      0x002328        0x413 build/default/debug/mcc_generated_files/interrupt_manager.o
- .debug_info      0x00273b        0xf9a build/default/debug/mcc_generated_files/i2c1_driver.o
- .debug_info      0x0036d5        0x1d9 build/default/debug/mcc_generated_files/delay.o
- .debug_info      0x0038ae        0x40d build/default/debug/main.o
+ .debug_info      0x000000        0x295 build/default/debug/mcc_generated_files/drivers/i2c_types.o
+ .debug_info      0x000295        0x61d build/default/debug/mcc_generated_files/drivers/i2c_simple_master.o
+ .debug_info      0x0008b2        0xc6e build/default/debug/mcc_generated_files/drivers/i2c_master.o
+ .debug_info      0x001520        0x31a build/default/debug/mcc_generated_files/system.o
+ .debug_info      0x00183a         0x9d build/default/debug/mcc_generated_files/where_was_i.o
+ .debug_info      0x0018d7        0x218 build/default/debug/mcc_generated_files/clock.o
+ .debug_info      0x001aef        0x3a4 build/default/debug/mcc_generated_files/traps.o
+ .debug_info      0x001e93        0x46d build/default/debug/mcc_generated_files/pin_manager.o
+ .debug_info      0x002300        0x40e build/default/debug/mcc_generated_files/interrupt_manager.o
+ .debug_info      0x00270e        0xf95 build/default/debug/mcc_generated_files/i2c1_driver.o
+ .debug_info      0x0036a3        0x1d4 build/default/debug/mcc_generated_files/delay.o
+ .debug_info      0x003877        0x408 build/default/debug/main.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0xa0e
@@ -519,7 +519,7 @@ __CONFIG1
  .debug_abbrev    0x00088a         0x67 build/default/debug/mcc_generated_files/delay.o
  .debug_abbrev    0x0008f1        0x11d build/default/debug/main.o
 
-.debug_line       0x000000        0xd67
+.debug_line       0x000000        0xd6a
  *(.debug_line)
  .debug_line      0x000000         0x6e build/default/debug/mcc_generated_files/drivers/i2c_types.o
  .debug_line      0x00006e        0x149 build/default/debug/mcc_generated_files/drivers/i2c_simple_master.o
@@ -533,7 +533,7 @@ __CONFIG1
  .debug_line      0x00086a        0x127 build/default/debug/mcc_generated_files/interrupt_manager.o
  .debug_line      0x000991        0x1bf build/default/debug/mcc_generated_files/i2c1_driver.o
  .debug_line      0x000b50         0xa6 build/default/debug/mcc_generated_files/delay.o
- .debug_line      0x000bf6        0x171 build/default/debug/main.o
+ .debug_line      0x000bf6        0x174 build/default/debug/main.o
 
 .debug_frame      0x000000        0xc4c
  *(.debug_frame)
@@ -1329,7 +1329,7 @@ mcc_generated_files/where_was_i.s.scn1
  .ivt._SI2C1Interrupt
                   0x000034          0x2 build/default/debug/mcc_generated_files/i2c1_driver.o
 
-.text             0x0003f4        0x916
+.text             0x0003f4        0x920
  .text            0x0003f4        0x3b4 build/default/debug/mcc_generated_files/drivers/i2c_master.o
                   0x0003f4                  _i2c_setDataCompleteCallback
                   0x000406                  _i2c_setWriteCollisionCallback
@@ -1413,40 +1413,40 @@ mcc_generated_files/where_was_i.s.scn1
                   0x000b1e                  build/default/debug/mcc_generated_files/drivers/i2c_simple_master.o:_rdBlkRegCompleteHandler
                   0x000b38                  _i2c_readDataBlock
                   0x000b74                  _i2c_readNBytes
- .text            0x000b9a         0xd4 build/default/debug/main.o
+ .text            0x000b9a         0xde build/default/debug/main.o
                   0x000b9a                  _main
-                  0x000ba2                  _readOuterDistance
-                  0x000be6                  _outerTrip
-                  0x000c0a                  _readInnerDistance
-                  0x000c4e                  _innerTrip
- .text            0x000c6e         0x56 build/default/debug/mcc_generated_files/delay.o
-                  0x000c6e                  _DELAY_milliseconds
-                  0x000c90                  _DELAY_microseconds
- .text            0x000cc4         0x46 build/default/debug/mcc_generated_files/pin_manager.o
-                  0x000cc4                  _PIN_MANAGER_Initialize
+                  0x000ba4                  _readOuterDistance
+                  0x000be8                  _outerTrip
+                  0x000c10                  _readInnerDistance
+                  0x000c54                  _innerTrip
+ .text            0x000c78         0x56 build/default/debug/mcc_generated_files/delay.o
+                  0x000c78                  _DELAY_milliseconds
+                  0x000c9a                  _DELAY_microseconds
+ .text            0x000cce         0x46 build/default/debug/mcc_generated_files/pin_manager.o
+                  0x000cce                  _PIN_MANAGER_Initialize
 
-.dinit            0x000d0a         0x44
- .dinit           0x000d0a         0x44 data_init
+.dinit            0x000d14         0x44
+ .dinit           0x000d14         0x44 data_init
 
-.text             0x000d4e         0x56
- .text            0x000d4e         0x2e build/default/debug/mcc_generated_files/clock.o
-                  0x000d4e                  _CLOCK_Initialize
- .text            0x000d7c         0x28 build/default/debug/mcc_generated_files/drivers/i2c_types.o
-                  0x000d7c                  _i2c_returnStop
-                  0x000d86                  _i2c_returnReset
-                  0x000d90                  _i2c_restartWrite
-                  0x000d9a                  _i2c_restartRead
+.text             0x000d58         0x56
+ .text            0x000d58         0x2e build/default/debug/mcc_generated_files/clock.o
+                  0x000d58                  _CLOCK_Initialize
+ .text            0x000d86         0x28 build/default/debug/mcc_generated_files/drivers/i2c_types.o
+                  0x000d86                  _i2c_returnStop
+                  0x000d90                  _i2c_returnReset
+                  0x000d9a                  _i2c_restartWrite
+                  0x000da4                  _i2c_restartRead
 
-.init.delay32     0x000da4         0x1c
- .init.delay32    0x000da4         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
-                  0x000da4                  ___delay32
+.init.delay32     0x000dae         0x1c
+ .init.delay32    0x000dae         0x1c c:/program files/microchip/xc16/v2.10/bin/bin/../../lib\libc99-pic30-elf.a(delay32.Meo)
+                  0x000dae                  ___delay32
 
-.text             0x000dc0         0x50
- .text            0x000dc0         0x1a build/default/debug/mcc_generated_files/traps.o
-                  0x000dc0                  _TRAPS_halt_on_error
- .text            0x000dda         0x1a build/default/debug/mcc_generated_files/interrupt_manager.o
-                  0x000dda                  _INTERRUPT_Initialize
- .text            0x000df4         0x10 build/default/debug/mcc_generated_files/where_was_i.o
-                  0x000df4                  _where_was_i
- .text            0x000e04          0xc build/default/debug/mcc_generated_files/system.o
-                  0x000e04                  _SYSTEM_Initialize
+.text             0x000dca         0x50
+ .text            0x000dca         0x1a build/default/debug/mcc_generated_files/traps.o
+                  0x000dca                  _TRAPS_halt_on_error
+ .text            0x000de4         0x1a build/default/debug/mcc_generated_files/interrupt_manager.o
+                  0x000de4                  _INTERRUPT_Initialize
+ .text            0x000dfe         0x10 build/default/debug/mcc_generated_files/where_was_i.o
+                  0x000dfe                  _where_was_i
+ .text            0x000e0e          0xc build/default/debug/mcc_generated_files/system.o
+                  0x000e0e                  _SYSTEM_Initialize
